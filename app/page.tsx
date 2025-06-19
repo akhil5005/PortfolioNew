@@ -312,8 +312,8 @@ export default function Portfolio() {
                 <CardDescription>2★ Rated Programmer</CardDescription>
               </CardHeader>
               <CardContent className="text-center space-y-4">
-                <div className="text-3xl font-bold text-gray-800">150+</div>
-                <p className="text-gray-600">Problems Solved</p>
+                <div className="text-3xl font-bold text-gray-800">25+</div>
+                <p className="text-gray-600">Contests</p>
                 <Button asChild variant="outline" className="w-full">
                   <Link href="https://www.codechef.com/users/akhil5005" target="_blank">
                     <ExternalLink className="mr-2 h-4 w-4" />
