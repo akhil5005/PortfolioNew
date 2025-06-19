@@ -111,51 +111,57 @@ export default function Portfolio() {
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
       {/* Header/Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-r from-blue-600 to-blue-800 text-white">
-        <div className="absolute inset-0 bg-black/10"></div>
-        <div className="relative container mx-auto px-4 py-20 lg:py-32">
-          <div className="flex flex-col lg:flex-row items-center gap-12">
-            <div className="flex-1 text-center lg:text-left">
-              <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
-                Hi, I'm <span className="text-blue-200">Akhil Mittal</span>
-              </h1>
-              <p className="text-xl lg:text-2xl mb-8 text-blue-100 leading-relaxed">
-                Second-year Computer Engineering student passionate about AI, ML, and competitive programming.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <Button asChild size="lg" className="bg-white text-blue-600 hover:bg-blue-50">
-                  <Link href="https://github.com/akhil5005" target="_blank">
-                    <Github className="mr-2 h-5 w-5" />
-                    View GitHub
-                  </Link>
-                </Button>
-                <Button
-                  asChild
-                  size="lg"
-                  variant="outline"
-                  className="border-white text-white hover:bg-white hover:text-blue-600"
-                >
-                  <Link href="#contact">
-                    <MessageSquare className="mr-2 h-5 w-5" />
-                    Get In Touch
-                  </Link>
-                </Button>
-              </div>
-            </div>
-            <div className="flex-shrink-0">
-              <div className="relative w-64 h-64 lg:w-80 lg:h-80">
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full"></div>
-                <Image
-                  src="/placeholder.svg?height=320&width=320"
-                  alt="Akhil Mittal"
-                  width={320}
-                  height={320}
-                  className="relative z-10 rounded-full border-4 border-white/20 object-cover"
-                />
-              </div>
-            </div>
-          </div>
+  <div className="absolute inset-0 bg-black/10"></div>
+  <div className="relative container mx-auto px-4 py-20 lg:py-32">
+    <div className="flex flex-col lg:flex-row items-center gap-12">
+    
+      {/* Text Section */}
+      <div className="flex-1 text-center lg:text-left">
+        <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
+          Hi, I'm <span className="text-blue-200">Akhil Mittal</span>
+        </h1>
+        <p className="text-xl lg:text-2xl mb-8 text-blue-100 leading-relaxed">
+          Third-year Computer Engineering student passionate about AI, ML, and competitive programming.
+        </p>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+          <Button asChild size="lg" className="bg-white text-blue-600 hover:bg-blue-50">
+            <Link href="https://github.com/akhil5005" target="_blank">
+              <Github className="mr-2 h-5 w-5" />
+              View GitHub
+            </Link>
+          </Button>
+          <Button
+            asChild
+            size="lg"
+            variant="outline"
+            className="border-white text-white hover:bg-white hover:text-blue-600"
+          >
+            <Link href="#contact">
+              <MessageSquare className="mr-2 h-5 w-5" />
+              Get In Touch
+            </Link>
+          </Button>
         </div>
-      </section>
+      </div>
+
+      {/* Image Section with Thapar Logo */}
+      <div className="flex-shrink-0">
+        <div className="relative w-64 h-64 lg:w-80 lg:h-80">
+          <div className="absolute inset-0 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full"></div>
+          <Image
+            src="C:\Users\VICTUS\Pictures\images.png" // 👈 your actual image file name placed in /public
+            alt="Thapar Institute Logo"
+            width={320}
+            height={320}
+            className="relative z-10 rounded-full border-4 border-white/20 object-cover"
+          />
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
       {/* About Me Section */}
       <section id="about" className="py-20">
@@ -173,7 +179,7 @@ export default function Portfolio() {
               <CardContent className="p-8 lg:p-12">
                 <div className="text-lg text-gray-700 leading-relaxed space-y-6">
                   <p>
-                    I'm a passionate second-year Computer Engineering student with a deep fascination for
+                    I'm a passionate Third-year Computer Engineering student with a deep fascination for
                     <span className="font-semibold text-blue-600"> Artificial Intelligence</span> and
                     <span className="font-semibold text-blue-600"> Machine Learning</span>. My journey in technology
                     began with curiosity about how computers can learn and make decisions, leading me to explore various
@@ -448,7 +454,7 @@ export default function Portfolio() {
                     </div>
                     <div>
                       <p className="font-medium">Email</p>
-                      <p className="text-gray-600">akhil.mittal@example.com</p>
+                      <p className="text-gray-600">amittal2_be23@thapar.edu</p>
                     </div>
                   </div>
                   <div className="flex items-center gap-4">
