@@ -69,42 +69,45 @@ export default function Portfolio() {
       { name: "React", level: 65 },
       { name: "Next.js", level: 60 },
     ],
-    tools: ["Git", "GitHub", "VS Code", "Jupyter", "Google Colab"],
+    tools: ["Git", "GitHub", "VS Code", "Jupyter", "Google Colab", "Vercel", "Eagle Software"],
   }
 
   const projects = [
+   {
+  title: "Rock vs Mine Classifier",
+  description:
+    "A classification model built to differentiate between rocks and mines using machine learning. It uses Support Vector Classifier (SVC) with 77% accuracy and includes data preprocessing, feature scaling, and model evaluation.",
+  technologies: ["Python", "scikit-learn", "Pandas", "NumPy", "Matplotlib"],
+  github: "https://github.com/akhil5005/Class2--DiabetesIdentifier",
+  demo: null,
+}
+ ,
     {
-      title: "Stock Price Prediction Model",
-      description:
-        "Machine learning model using LSTM networks to predict stock prices with 85% accuracy. Implemented data preprocessing, feature engineering, and model evaluation.",
-      technologies: ["Python", "TensorFlow", "Pandas", "NumPy", "Matplotlib"],
-      github: "https://github.com/akhil5005",
-      demo: null,
-    },
-    {
-      title: "Competitive Programming Solutions",
-      description:
-        "Collection of optimized solutions for 300+ problems from CodeChef, LeetCode, and Codeforces. Includes detailed explanations and complexity analysis.",
-      technologies: ["C++", "Python", "Algorithms", "Data Structures"],
-      github: "https://github.com/akhil5005",
-      demo: null,
-    },
-    {
-      title: "EDA on E-commerce Dataset",
-      description:
-        "Comprehensive exploratory data analysis on customer behavior patterns. Generated actionable insights using statistical analysis and data visualization.",
-      technologies: ["Python", "Pandas", "Seaborn", "Matplotlib", "Jupyter"],
-      github: "https://github.com/akhil5005",
-      demo: null,
-    },
-    {
-      title: "Personal Portfolio Website",
-      description:
-        "Responsive portfolio website built with modern web technologies. Features clean design, smooth animations, and optimized performance.",
-      technologies: ["Next.js", "React", "Tailwind CSS", "TypeScript"],
-      github: "https://github.com/akhil5005",
-      demo: "#",
-    },
+  title: "Diabetes Identifier",
+  description:
+    "A machine learning classification model to predict whether a person is diabetic based on health indicators. Achieved 77% accuracy using Support Vector Classifier (SVC) with preprocessing, feature scaling, and model evaluation.",
+  technologies: ["Python", "scikit-learn", "Pandas", "NumPy", "Matplotlib"],
+  github: "https://github.com/akhil5005/Class1---Rock-vs-Mine",
+  demo: null,
+}
+,
+   {
+  title: "QR Code Generator",
+  description:
+    "A simple Python-based tool to generate QR codes for URLs, text, or contact details. Built using the `qrcode` and `tkinter` libraries with a user-friendly GUI for generating and saving QR images.",
+  technologies: ["Python", "qrcode", "Tkinter", "Pillow"],
+  github: "https://github.com/akhil5005/MiniProject16---QRGenerator",
+  demo: null,
+} ,
+  {
+  title: "Image to Text Converter",
+  description:
+    "A Python-based application that extracts text from images using OCR (Optical Character Recognition). Built with a simple GUI using Tkinter and powered by pytesseract and OpenCV for image processing and text extraction.",
+  technologies: ["Python", "pytesseract", "Tkinter"],
+  github: "https://github.com/akhil5005/MiniProject10---ImageToTextConversion",
+  demo: null,
+}
+,
   ]
 
   return (
@@ -146,16 +149,7 @@ export default function Portfolio() {
 
       {/* Image Section with Thapar Logo */}
       <div className="flex-shrink-0">
-        <div className="relative w-64 h-64 lg:w-80 lg:h-80">
-          <div className="absolute inset-0 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full"></div>
-          <Image
-            src="C:\Users\VICTUS\Pictures\images.png" // 👈 your actual image file name placed in /public
-            alt="Thapar Institute Logo"
-            width={320}
-            height={320}
-            className="relative z-10 rounded-full border-4 border-white/20 object-cover"
-          />
-        </div>
+        {/* Intentionally left empty for a minimalist look as requested */}
       </div>
 
     </div>
@@ -488,7 +482,7 @@ export default function Portfolio() {
                       </Link>
                     </Button>
                     <Button asChild size="sm" variant="outline">
-                      <Link href="#" target="_blank">
+                      <Link href="https://www.linkedin.com/in/akhil-mittal-0b7b23262/" target="_blank">
                         <Linkedin className="h-4 w-4" />
                       </Link>
                     </Button>
@@ -508,7 +502,7 @@ export default function Portfolio() {
             </div>
 
             {/* Contact Form */}
-            <Card className="border-0 shadow-lg">
+            {/* <Card className="border-0 shadow-lg">
               <CardHeader>
                 <CardTitle className="text-blue-600">Send a Message</CardTitle>
               </CardHeader>
@@ -561,7 +555,7 @@ export default function Portfolio() {
                   </Button>
                 </form>
               </CardContent>
-            </Card>
+            </Card> */}
           </div>
         </div>
       </section>
